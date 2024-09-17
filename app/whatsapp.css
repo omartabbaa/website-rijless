@@ -1,0 +1,31 @@
+.whatsapp-link {
+    position: fixed;
+    bottom: -80px;
+    right: 40px;
+    z-index: 50;
+    transition: bottom 0.5s ease;
+}
+
+.whatsapp-link.visible {
+    bottom: 60px;
+}
+
+.whatsapp-icon {
+    width: 55px;
+    height: 55px;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 580px) {
+    .whatsapp-link {
+        right: 30px;
+    }
+    
+    .whatsapp-link.visible {
+        bottom: 30px;
+    }
+}
